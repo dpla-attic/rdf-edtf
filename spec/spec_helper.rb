@@ -4,6 +4,9 @@ Bundler.setup
 require 'rdf/spec'
 require 'rdf/edtf'
 
+# Load support files
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+
 RSpec.configure do |config|
   config.color = true
   config.tty = true
