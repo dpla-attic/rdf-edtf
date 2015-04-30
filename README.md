@@ -35,6 +35,8 @@ Please observe the following guidelines:
   - Follow the included style guidelines (i.e. run `rubocop` before committing).
   - Use well formed commit messages.
 
+Do note that in order for us to merge any non-trivial changes (as a rule of thumb, additions larger than about 15 lines of code), we need an explicit public domain dedication on record from you.
+
 License
 -------
 

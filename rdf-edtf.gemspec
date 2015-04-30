@@ -9,14 +9,13 @@ Gem::Specification.new do |s|
   s.authors     = ['Tom Johnson']
   s.homepage    = 'https://github.com/dpla/rdf-edtf'
   s.email       = 'tom@dp.la'
-  s.summary     = %q{}
-  s.description = %q{}
+  s.summary     = %q{An `RDF::Literal` implementation around Extended Date Time Format.}
+  s.description = %q{Supports serializing and parsing EDTF (all levels) as typed literals in RDF.}
   s.license     = 'UNLICENSE'
   s.required_ruby_version     = '>= 2.0.0'
 
   s.add_dependency('rdf', '~> 1.1')
-  s.add_dependency('edtf')
-  s.add_dependency('ebnf')
+  s.add_dependency('edtf', '~>2.1.0')
 
   s.add_development_dependency('pry')
   s.add_development_dependency('rspec')
