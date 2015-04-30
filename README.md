@@ -34,3 +34,8 @@ Please observe the following guidelines:
   - Document methods you add using YARD annotations.
   - Follow the included style guidelines (i.e. run `rubocop` before committing).
   - Use well formed commit messages.
+
+License
+-------
+
+This is free and unencumbered public domain software. For more information, see http://unlicense.org/ or the accompanying {file:UNLICENSE} file.

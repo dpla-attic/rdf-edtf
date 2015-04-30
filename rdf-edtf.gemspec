@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = 'tom@dp.la'
   s.summary     = %q{}
   s.description = %q{}
-  s.license     = 'APACHE2'
+  s.license     = 'UNLICENSE'
   s.required_ruby_version     = '>= 2.0.0'
 
   s.add_dependency('rdf', '~> 1.1')
@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {spec}/*`.split("\n")
 
-  s.extra_rdoc_files = ['LICENSE',
+  s.extra_rdoc_files = ['UNLICENSE',
                         'README.md']
 end
