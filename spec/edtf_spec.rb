@@ -124,8 +124,10 @@ describe RDF::Literal do
                     '2004?-06-(11)~',
                     '(2004-(06)~)?',
                     '2004?-(06)?~',
-                    #'(2004)?-06-04~', # unsupported; EDTF.parse returns nil
-                    #'(2011)-06-04~', # unsupported; EDTF.parse returns nil
+                    # in addition to being unsupproed by EDTF.parse, these
+                    # appear to be disallowed by EDTF's BNF:
+                    # '(2004)?-06-04~', # unsupported; EDTF.parse returns nil
+                    # '(2011)-06-04~', # unsupported; EDTF.parse returns nil,
                     '2011-(06-04)~',
                     '2011-23~',
                     '156u-12-25',
@@ -145,11 +147,10 @@ describe RDF::Literal do
                     '2004-06-uu/2004-07-03',
                     'y17e7',
                     'y-17e7',
-                    #'y17101e4p3', # unsupported; EDTF.parse returns nil
+                    'y17101e4p3', # unsupported; EDTF.parse returns nil
                     '2001-21^southernHemisphere'],
-                   []
-                   # @todo: Data
-                   # ['abc', '123', '1921-1', '100000', 'uuuu', '192?']
+                   ['abc', '123', '1921-1', '100000', '1923-13', '192?',
+                    '1924a', '1234-22abc', '1xxx']
 
   describe 'initializing with datatype' do
     subject { RDF::Literal(date, datatype: RDF::EDTF::Literal::DATATYPE) }
