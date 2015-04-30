@@ -1,10 +1,12 @@
 RDF::EDTF
 =========
 
-This is an `RDF::Literal` implementation around Extended Date Time Format.
+This is an `RDF::Literal` implementation around
+[Extended Date Time Format](http://www.loc.gov/standards/datetime/pre-submission.html).
 
 The underlying EDTF parser and implementation is provided by
-[`edtf-ruby`](https://github.com/inukshuk/edtf-ruby/).
+[`edtf-ruby`](https://github.com/inukshuk/edtf-ruby/). The parser supports all
+EDTF features, with caveats noted below.
 
 Usage
 -----
