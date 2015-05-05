@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe RDF::EDTF::Literal do
-  it_behaves_like 'RDF::Literal with datatype',
+  it_behaves_like 'RDF::Literal',
                   EDTF.parse!('1076'),
                   'http://id.loc.gov/datatypes/edtf/EDTF'
 
