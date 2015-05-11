@@ -19,14 +19,6 @@ RDF::EDTF::Literal.new('1076?')
 RDF::Literal('1076?', datatype: RDF::EDTF::Literal::DATATYPE)
 ```
 
-Known Issues
-------------
-
-  - Datetimes without a zone offset will be parsed and reserialized as UTC with
-    `+00:00`. See: https://github.com/inukshuk/edtf-ruby/issues/14
-  - Sets will be reserialized with spaces in their separators. See:
-    https://github.com/inukshuk/edtf-ruby/issues/15
-
 Contribution Guidelines
 -----------------------
 

@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version     = '>= 2.0.0'
 
   s.add_dependency('rdf', '~> 1.1')
-  s.add_dependency('edtf', '~>2.1.0')
+  s.add_dependency('edtf', '~>2.2.0')
 
   s.add_development_dependency('pry')
   s.add_development_dependency('rspec')

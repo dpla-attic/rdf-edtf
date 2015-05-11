@@ -2,6 +2,7 @@ require 'bundler/setup'
 Bundler.setup
 
 require 'rdf/edtf'
+require 'rdf/spec/literal'
 
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
